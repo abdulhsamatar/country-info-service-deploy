@@ -72,6 +72,29 @@ assignment-1/
 
 - REST Countries: `http://129.241.150.113:8080/v3.1/`
 - Currency API: `http://129.241.150.113:9090/currency/`
+```
+
+```
+
+## Deployment
+
+The service is deployed on Render and accessible at:
+
+**Live URL:** ` https://country-info-service-deploy.onrender.com`
+
+### Testing the deployed service:
+```bash
+# Check status
+curl https://country-info-service-deploy.onrender.com/countryinfo/v1/status/
+
+# Get country info
+curl https://country-info-service-deploy.onrender.com/countryinfo/v1/info/no
+
+# Get exchange rates
+curl https://country-info-service-deploy.onrender.com/countryinfo/v1/exchange/no
+```
+### Note:
+  - Try different country ISO codes!
 
 ## Notes
 
