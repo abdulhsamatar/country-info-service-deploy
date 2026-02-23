@@ -79,3 +79,15 @@ assignment-1/
 - 10 second timeout on external API calls
 - Returns JSON for all responses
 ```
+
+```
+## Use of AI
+
+This project was primarily implemented manually. AI tools (such as ChatGPT and Claude) were used as assistive tools for:
+
+- Understanding Go concepts and REST API design
+- Debugging issues and interpreting error messages
+- Suggesting code structure and helping formulate function comments more clearly
+- Reviewing documentation and assisting with formatting parts of the README where formatting was difficult
+
+All code was reviewed, understood, and adapted by myself before being included in the project.
