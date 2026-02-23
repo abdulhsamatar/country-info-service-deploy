@@ -98,8 +98,10 @@ func ExchangeHandler(w http.ResponseWriter, r *http.Request) {
 		}
 
 		// Convert to required format: array of single-key maps
-		for currency, rate := range rates {
-			exchangeRates = append(exchangeRates, map[string]float64{currency: rate})
+		for _, currency := range targetCurrencies {
+			if rate, exists := rates[currency]; exists {
+				exchangeRates = append(exchangeRates, map[string]float64{currency: rate})
+			}
 		}
 	}
 
